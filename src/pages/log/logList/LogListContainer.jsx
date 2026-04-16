@@ -1,6 +1,4 @@
-import React from 'react';
-
-const LogListPage = () => {
+const LogListContainer = () => {
     return (
         <div>
             <h1>로그 목록 페이지</h1>
@@ -8,4 +6,4 @@ const LogListPage = () => {
     );
 };
 
-export default LogListPage;
+export default LogListContainer;

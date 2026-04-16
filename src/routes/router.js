@@ -16,10 +16,14 @@ import LoginPage from "../pages/auth/LoginPage";
 import SignupPage from "../pages/auth/SignupPage";
 import GrowthPage from "../pages/growth/GrowthPage";
 import CommunityPage from "../components/community/community";
-import LogListPage from "../pages/log/LogListPage";
-import LogWritePage from "../pages/log/LogWritePage";
-import LogStep1 from "../components/log/LogStep1";
-import LogStep2 from "../components/log/LogStep2";
+import LogListContainer from "../pages/log/logList/LogListContainer";
+import LogWriteContainer from "../pages/log/logWrite/LogWriteContainer";
+import LogStep1Component from "../pages/log/logWrite/LogStep1Component";
+import LogStep2Component from "../pages/log/logWrite/LogStep2Component";
+import LogResultContainer from "../pages/log/logResult/LogResultContainer";
+import PlanWriteContainer from "../pages/plan/planWrite/PlanWriteContainer";
+import ProjectDashboardContainer from "../pages/plan/projectDashboard/ProjectDashboardContainer";
+import DailyCheckListContainer from "../pages/growth/dailyCheckList/DailyCheckListContainer";
 import MyPage from "../pages/user/MyPage";
 import ProfileEdit from "../components/mypage/profileEdit/ProfileEdit";
 import Profile from "../components/mypage/profile/Profile";
@@ -117,19 +121,23 @@ const router = createBrowserRouter([
     children: [
       {
         path: "list",
-        element: <LogListPage />
+        element: <LogListContainer />
       },
       {
         path: "write",
-        element: <LogWritePage />,
+        element: <LogWriteContainer />,
         children: [
           {
             path: "",
-            element: <LogStep1 />
+            element: <LogStep1Component />
           },
           {
             path: "step2",
-            element: <LogStep2 />
+            element: <LogStep2Component />
+          },
+          {
+            path: "result",
+            element: <LogResultContainer />
           }
         ]
       }
@@ -176,6 +184,18 @@ const router = createBrowserRouter([
   {
     path: "/case/:id",
     element: <CaseDetailPage />
+  },
+  {
+    path: "/plan/write",
+    element: <PlanWriteContainer />
+  },
+  {
+    path: "/plan/dashboard",
+    element: <ProjectDashboardContainer />
+  },
+  {
+    path: "/growth/daily-checklist",
+    element: <DailyCheckListContainer />
   },
   {
     path: "*",

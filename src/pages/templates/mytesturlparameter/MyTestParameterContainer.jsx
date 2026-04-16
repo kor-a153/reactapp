@@ -8,12 +8,12 @@ const dummy = [
     content: '게시글 내용1'
   },
   {
-    id: 1,
+    id: 2,
     title: '게시글 제목2',
     content: '게시글 내용2'
   },
   {
-    id: 1,
+    id: 3,
     title: '게시글 제목3',
     content: '게시글 내용3'
   },
