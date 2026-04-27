@@ -25,7 +25,7 @@ import MyProfileContainer from "../pages/mypage/profile/MyProfileContainer";
 import MyTrashContainer from "../pages/mypage/trash/MyTrashContainer";
 import MyGuestbookContainer from "../pages/mypage/guestbook/MyGuestbookContainer";
 import MyLikesContainer from "../pages/mypage/likes/MyLikesContainer";
-import MyFailLogsContainer from "../pages/mypage/logs/MyFailLogsContainer";
+import MyFailLogsContainer from "../pages/mypage/faillog/MyFailLogsContainer";
 import MyPageContainer from "../pages/mypage/MyPageContainer";
 import LogOtherContainer from "../pages/log/other/LogOtherContainer";
 import LogOtherListContainer from "../pages/log/other/LogOtherListContainer";
