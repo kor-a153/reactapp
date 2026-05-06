@@ -8,30 +8,28 @@ const theme = {};
 // Brand Colors
 theme.PALETTE = {
   primary: {
-    light:      "#A7B5FF",  // Primary Light
-    main:       "#4359FC",  // Primary
-    dark:       "#0014A9",  // Primary Dark
-    extraLight: "#EEF1FF",  // Extra Light Blue
+    light:      "#DBEAFE",  // Primary Light
+    main:       "#027DF0"  // Prima
   },
   secondary: {
-    main:  "#129D1B",       // Secondary (green)
-    light: "#AAE5AE",       // Secondary Light
+    main:  "#00B53F",       // Secondary (green)
+    light: "#D1FFE1",       // Secondary Light
   },
   third: {
-    main:  "#B63FDE",       // Third (purple)
-    light: "#E1BEEC",       // Third Light
-  },
-  warning: {
-    main:  "#FF8004",       // Warning (orange)
-    light: "#FFCE9F",       // Warning Light
+    main:  "#AB47FF",       // Third (purple)
+    light: "#F3E8FF",       // Third Light
   },
   fourth: {
-    main:  "#FFCB38",       // Fourth (yellow)
-    light: "#FFE086",       // Fourth Light
+    main:  "#F53102",       // Fourth (red)
+    light: "#FFE4E6",       // Fourth Light
   },
-  red:   "#F14141",         // Primary Red
+  fifth: {
+    main:  "#FF34C5",       // Fifth (pink)
+    light: "#FFEBFA",       // Fifth Light
+  },
+  yellow:   "#F5EE03",         // Primary Yellow
   white: "#FFFFFF",
-  black: "#222222",
+  black: "#333333",
 };
 
 // Gradient Colors
@@ -41,20 +39,21 @@ theme.GRADIENT = {
   blue:      "linear-gradient(135deg, #5B6EFD 0%, #0014A9 100%)",
 };
 
-// Greyscale (0: 밝음 → 9: 어두움 / 10: 배경용 밝은 계열)
+// Greyscale (1: 밝음 → 10: 어두움 / 11: 배경용 밝은 계열)
 theme.GRAYSCALE = {
-  0:  "#F2F2F2",
-  1:  "#E6E6E6",
-  2:  "#D9D9D9",
-  3:  "#CCCCCC",
-  4:  "#C0C0C0",
-  5:  "#B3B3B3",
-  6:  "#A6A6A6",
-  7:  "#999999",
-  8:  "#E5E7EB",
-  9:  "#9CA3AF",
-  10: "#F9FAFB",
+  1:  "#F2F2F2",
+  2:  "#E6E6E6",
+  3:  "#D9D9D9",
+  4:  "#CCCCCC",
+  5:  "#C0C0C0",
+  6:  "#B3B3B3",
+  7:  "#A6A6A6",
+  8:  "#999999",
+  9:  "#8D8D8D", 
+  10: "#555555", 
 };
+
+
 
 // Text Colors
 theme.TEXT_COLOR = {
@@ -68,46 +67,42 @@ theme.TEXT_COLOR = {
 // TYPOGRAPHY
 // ─────────────────────────────────────────
 
-// h1~h13: 사이즈 기준 / FONT_WEIGHT와 조합하여 사용
+// h1~h11: 사이즈 기준 / FONT_WEIGHT와 조합하여 사용
 // 예) fontSize: theme.FONT_SIZE.h9, fontWeight: theme.FONT_WEIGHT.bold
 theme.FONT_SIZE = {
-  h1:  "72px",   // Heading1
-  h2:  "48px",   // Heading2
-  h3:  "40px",   // Heading3
-  h4:  "36px",   // Heading4
-  h5:  "28px",   // Heading5
-  h6:  "28px",   // Heading6
-  h7:  "24px",   // Heading7  (bold / medium / regular)
-  h8:  "20px",   // Heading8  (bold / medium)
-  h9:  "16px",   // Heading9  (bold / medium / regular / light)
-  h10: "14px",   // Heading10 (bold / medium / regular)
-  h11: "12px",   // Heading11 (bold / medium / regular)
-  h12: "10px",   // Heading12 (bold / regular)
-  h13: "8px",    // Heading13 (bold)
+  h1:  "80px",   // Heading1  (bold / regular / extrabold)
+  h2:  "60px",   // Heading2  (bold / regular / extrabold)
+  h3:  "45px",   // Heading3  (bold / regular / extrabold)
+  h3_2:  "36px",   // Heading3-2  (bold / regular / extrabold)
+  h4:  "32px",   // Heading4 (bold / regular / extrabold)
+  h5:  "28px",   // Heading5 (bold / regular / extrabold)
+  h6:  "24px",   // Heading6 (bold / regular / extrabold)
+  h7:  "20px",   // Heading7  (bold / regular / extrabold)
+  h8:  "16px",   // Heading8  (bold / regular / extrabold)
+  h9:  "14px",   // Heading9  (bold / regular / extrabold)
+  h10: "12px",   // Heading10 (bold / regular / extrabold)
+  h11: "10px",   // Heading11 (bold / regular / extrabold)
 };
 
 theme.FONT_WEIGHT = {
-  light:   "300",
   regular: "400",
-  medium:  "500",
   bold:    "700",
+  extrabold:    "800",
 };
 
 // 행간
 theme.FONT_LINE = {
-  h1:  "80px",
-  h2:  "56px",
-  h3:  "51px",
-  h4:  "51px",
-  h5:  "40px",
-  h6:  "40px",
-  h7:  "32px",
-  h8:  "28px",
-  h9:  "24px",
-  h10: "22px",
-  h11: "20px",
-  h12: "14px",
-  h13: "11px",
+  h1:  "98px",
+  h2:  "78px",
+  h3:  "60px",
+  h3_2:  "48px",
+  h4:  "46px",
+  h5:  "38px",
+  h6:  "34px",
+  h7:  "30px",
+  h8:  "24px",
+  h9:  "22px",
+  h10: "20px",
 };
 
 export default theme;

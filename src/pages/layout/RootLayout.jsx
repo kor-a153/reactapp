@@ -15,8 +15,8 @@ const RootLayout = () => {
             <img src="/logo.png" alt="FailLog" />
           </Link>
             
-            <Link to="/logs/new/step1">로그작성</Link>
             <Link to="/fail-logs">페일로그</Link>
+            <Link to="/projects">프로젝트</Link>
             <Link to="/chronology">성장연대기</Link>
             <Link to="/community">커뮤니티</Link>
             <Link to="/my-page/profile">마이페이지</Link>

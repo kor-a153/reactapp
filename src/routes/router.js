@@ -29,6 +29,9 @@ import MyFailLogsContainer from "../pages/mypage/faillog/MyFailLogsContainer";
 import MyPageContainer from "../pages/mypage/MyPageContainer";
 import LogOtherContainer from "../pages/log/other/LogOtherContainer";
 import LogOtherListContainer from "../pages/log/other/LogOtherListContainer";
+import ChronologyMainContainer from "../pages/chronology/ChronologyMainContainer";
+import ProjectMainContainer from "../pages/project/ProjectMainContainer";
+import VisionMainContainer from "../pages/vision/VisionMainContainer";
 
 const router = createBrowserRouter([
   {
@@ -165,7 +168,24 @@ const router = createBrowserRouter([
             element: <MyTrashContainer />
           },
         ]
+      },
+      { 
+        path : "chronology",
+        element: <ChronologyMainContainer />,
+        children: []
+      },
+      {
+        path: "projects",
+        element: <ProjectMainContainer />,
+        children : []
+      },
+      {
+        path : "vision",
+        element : <VisionMainContainer />,
+        children : []
       }
+      
+
     ]
   },
 ])
