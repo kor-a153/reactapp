@@ -1,13 +1,14 @@
 import React from 'react';
 import MainMenuContainer from './MainMenuContainer';
 import IntroContainer from './IntroContainer';
+import useAuthStore from '../../store/authStore';
 
 const MainContainer = () => {
-    // const {isAuthenticated} = useAuthStore()
+    const {isAuthenticated} = useAuthStore()
 
     return (
         <>
-            {true ? <MainMenuContainer /> : <IntroContainer />}
+            {isAuthenticated  ? <MainMenuContainer /> : <IntroContainer />}
         </>
     );
 };
