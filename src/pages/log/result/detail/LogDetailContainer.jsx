@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import theme from '../../../../styles/theme';
-import paperclipImg from '../../../../assets/paperclip.png';
 
 // Hardcoded mock data
 const LOG_DATA = {
@@ -44,10 +43,7 @@ const LogDetailContainer = () => {
     <S.CardWrapper>
       <S.PurpleShadow />
       <S.Card>
-      {/* Paperclip decoration */}
-      <S.Paperclip>
-        <img src={paperclipImg} alt="paperclip" />
-      </S.Paperclip>
+
 
       {/* Badges */}
       <S.BadgeRow>
@@ -136,20 +132,7 @@ S.Card = styled.div`
   gap: 32px;
 `;
 
-S.Paperclip = styled.div`
-  position: absolute;
-  top: -45px; 
-  right: 120px;
-  pointer-events: none;
-  user-select: none;
-  z-index: 10;
 
-  img {
-    width: 80px; /* Adjust size based on design */
-    height: auto;
-    filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.15));
-  }
-`;
 
 S.BadgeRow = styled.div`
   display: flex;
