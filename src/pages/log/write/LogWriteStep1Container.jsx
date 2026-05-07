@@ -5,7 +5,7 @@ import theme from '../../../styles/theme';
 
 const LogWriteStep1Container = () => {
   const navigate = useNavigate();
-  
+
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
   const [vision, setVision] = useState("");
@@ -89,8 +89,8 @@ const LogWriteStep1Container = () => {
           <S.FormRow>
             <S.FormGroup $flex={1.5}>
               <S.Label>로그 제목</S.Label>
-              <S.Input 
-                placeholder="예) 정보처리기사 자격증 필기 도전기" 
+              <S.Input
+                placeholder="예) 정보처리기사 자격증 필기 도전기"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
@@ -106,8 +106,8 @@ const LogWriteStep1Container = () => {
                 {isCategoryOpen && (
                   <S.FloatingList>
                     {categories.map((cat, idx) => (
-                      <S.FloatingItem 
-                        key={idx} 
+                      <S.FloatingItem
+                        key={idx}
                         $isSelected={category === cat}
                         onClick={() => {
                           setCategory(cat);
@@ -128,17 +128,17 @@ const LogWriteStep1Container = () => {
               <S.Label>이루고 싶은 비전</S.Label>
               <S.LoadVisionButton $isOpen={isVisionListOpen} type="button" onClick={() => setIsVisionListOpen(!isVisionListOpen)}>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2.6499 3.98242H13.3166M2.6499 7.98242H13.3166M2.6499 11.9824H13.3166" stroke="currentColor" strokeWidth="1.88235" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2.6499 3.98242H13.3166M2.6499 7.98242H13.3166M2.6499 11.9824H13.3166" stroke="currentColor" strokeWidth="1.88235" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 기존 비전 불러오기
               </S.LoadVisionButton>
             </S.LabelRow>
-            <S.Input 
-              placeholder="예) 정보처리기사 취득하기" 
+            <S.Input
+              placeholder="예) 정보처리기사 취득하기"
               value={vision}
               onChange={(e) => setVision(e.target.value)}
             />
-            
+
             {isVisionListOpen && (
               <S.FloatingList>
                 {visions.length > 0 ? (
@@ -149,7 +149,7 @@ const LogWriteStep1Container = () => {
                   ))
                 ) : (
                   <S.EmptyVision>
-                    아직 작성된 비전이 없습니다.<br/>
+                    아직 작성된 비전이 없습니다.<br />
                     새로운 비전을 작성해주세요.
                   </S.EmptyVision>
                 )}
@@ -163,7 +163,7 @@ const LogWriteStep1Container = () => {
               <S.UploadButtonArea onClick={() => fileInputRef.current?.click()}>
                 <S.UploadIcon>
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.5001 9.51076C14.6327 9.51076 14.7599 9.56857 14.8536 9.67147C14.9473 9.77437 15 9.91394 15 10.0595V12.2543C15 12.9819 14.7371 13.6809 14.2682 14.1967C13.7993 14.7114 13.1685 15 12.4987 15H2.50133C1.83851 15 1.20168 14.7114 0.731806 14.1967C0.499498 13.9416 0.315288 13.6388 0.189717 13.3055C0.0641453 12.9722 -0.00032275 12.615 1.21494e-06 12.2543V10.0595C1.21494e-06 9.91394 0.0526656 9.77437 0.146409 9.67147C0.240152 9.56857 0.367295 9.51076 0.499868 9.51076C0.632441 9.51076 0.759584 9.56857 0.853327 9.67147C0.94707 9.77437 0.999735 9.91394 0.999735 10.0595V12.2543C0.999999 12.6905 1.15797 13.1087 1.43896 13.4172C1.71994 13.7256 2.10096 13.899 2.49833 13.8993H12.4957C12.893 13.899 13.2741 13.7256 13.555 13.4172C13.836 13.1087 13.994 12.6905 13.9943 12.2543V10.0595C13.9943 9.91394 14.0469 9.77437 14.1407 9.67147C14.2344 9.56857 14.3616 9.51076 14.4941 9.51076H14.5001ZM7.50963 12.066C7.37706 12.066 7.24991 12.0082 7.15617 11.9053C7.06243 11.8024 7.00976 11.6628 7.00976 11.5173L7.00976 1.87108L4.86033 4.23051C4.81386 4.28153 4.75868 4.32199 4.69796 4.3496C4.63724 4.37721 4.57216 4.39142 4.50643 4.39142C4.4407 4.39142 4.37562 4.37721 4.3149 4.3496C4.25417 4.32199 4.199 4.28153 4.15252 4.23051C4.10605 4.17949 4.06918 4.11893 4.04403 4.05227C4.01888 3.98562 4.00593 3.91417 4.00593 3.84203C4.00593 3.76988 4.01888 3.69844 4.04403 3.63178C4.06918 3.56513 4.10605 3.50456 4.15252 3.45354L7.15172 0.16132C7.19815 0.1102 7.25331 0.0696368 7.31403 0.0419549C7.37476 0.0142729 7.43987 1.52858e-05 7.50563 0C7.57139 1.52984e-05 7.6365 0.014273 7.69722 0.0419549C7.75795 0.0696369 7.81311 0.1102 7.85953 0.16132L10.8587 3.45354C10.9054 3.50549 10.9417 3.56475 10.9677 3.63133C11.0067 3.73119 11.0057 3.7696 11.0057 3.84203C11.0059 3.95079 10.9766 4.05716 10.9216 4.14763C10.8666 4.2381 10.7883 4.30858 10.6968 4.35013C10.6359 4.3779 10.5707 4.39219 10.5048 4.39219C10.4389 4.39219 10.3737 4.3779 10.3129 4.35013C10.2523 4.32233 10.1972 4.28168 10.1509 4.23051L8.0015 1.87108L8.0015 11.5173C8.0015 11.6628 7.94883 11.8024 7.85509 11.9053C7.76135 12.0082 7.6342 12.066 7.50163 12.066H7.50963Z" fill="currentColor"/>
+                    <path d="M14.5001 9.51076C14.6327 9.51076 14.7599 9.56857 14.8536 9.67147C14.9473 9.77437 15 9.91394 15 10.0595V12.2543C15 12.9819 14.7371 13.6809 14.2682 14.1967C13.7993 14.7114 13.1685 15 12.4987 15H2.50133C1.83851 15 1.20168 14.7114 0.731806 14.1967C0.499498 13.9416 0.315288 13.6388 0.189717 13.3055C0.0641453 12.9722 -0.00032275 12.615 1.21494e-06 12.2543V10.0595C1.21494e-06 9.91394 0.0526656 9.77437 0.146409 9.67147C0.240152 9.56857 0.367295 9.51076 0.499868 9.51076C0.632441 9.51076 0.759584 9.56857 0.853327 9.67147C0.94707 9.77437 0.999735 9.91394 0.999735 10.0595V12.2543C0.999999 12.6905 1.15797 13.1087 1.43896 13.4172C1.71994 13.7256 2.10096 13.899 2.49833 13.8993H12.4957C12.893 13.899 13.2741 13.7256 13.555 13.4172C13.836 13.1087 13.994 12.6905 13.9943 12.2543V10.0595C13.9943 9.91394 14.0469 9.77437 14.1407 9.67147C14.2344 9.56857 14.3616 9.51076 14.4941 9.51076H14.5001ZM7.50963 12.066C7.37706 12.066 7.24991 12.0082 7.15617 11.9053C7.06243 11.8024 7.00976 11.6628 7.00976 11.5173L7.00976 1.87108L4.86033 4.23051C4.81386 4.28153 4.75868 4.32199 4.69796 4.3496C4.63724 4.37721 4.57216 4.39142 4.50643 4.39142C4.4407 4.39142 4.37562 4.37721 4.3149 4.3496C4.25417 4.32199 4.199 4.28153 4.15252 4.23051C4.10605 4.17949 4.06918 4.11893 4.04403 4.05227C4.01888 3.98562 4.00593 3.91417 4.00593 3.84203C4.00593 3.76988 4.01888 3.69844 4.04403 3.63178C4.06918 3.56513 4.10605 3.50456 4.15252 3.45354L7.15172 0.16132C7.19815 0.1102 7.25331 0.0696368 7.31403 0.0419549C7.37476 0.0142729 7.43987 1.52858e-05 7.50563 0C7.57139 1.52984e-05 7.6365 0.014273 7.69722 0.0419549C7.75795 0.0696369 7.81311 0.1102 7.85953 0.16132L10.8587 3.45354C10.9054 3.50549 10.9417 3.56475 10.9677 3.63133C11.0067 3.73119 11.0057 3.7696 11.0057 3.84203C11.0059 3.95079 10.9766 4.05716 10.9216 4.14763C10.8666 4.2381 10.7883 4.30858 10.6968 4.35013C10.6359 4.3779 10.5707 4.39219 10.5048 4.39219C10.4389 4.39219 10.3737 4.3779 10.3129 4.35013C10.2523 4.32233 10.1972 4.28168 10.1509 4.23051L8.0015 1.87108L8.0015 11.5173C8.0015 11.6628 7.94883 11.8024 7.85509 11.9053C7.76135 12.0082 7.6342 12.066 7.50163 12.066H7.50963Z" fill="currentColor" />
                   </svg>
                 </S.UploadIcon>
                 <S.UploadText>클릭해서 사진 업로드 (JPG, PNG / 최대 5MB)</S.UploadText>
@@ -175,7 +175,7 @@ const LogWriteStep1Container = () => {
                 style={{ display: 'none' }}
                 onChange={handleImageUpload}
               />
-              
+
               {thumbnail && (
                 <S.PreviewWrapper>
                   <S.PreviewImage src={thumbnail.url} alt="thumbnail" />
@@ -184,7 +184,7 @@ const LogWriteStep1Container = () => {
                   </S.FileNameContainer>
                   <S.DeleteIcon onClick={handleDeleteImage}>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L13 13M1 13L13 1" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+                      <path d="M1 1L13 13M1 13L13 1" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
                     </svg>
                   </S.DeleteIcon>
                 </S.PreviewWrapper>
@@ -207,7 +207,7 @@ S.Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 60px 20px;
-  background-color: ${theme.GRAYSCALE[10]};
+  background-color: #F8F9FA;
 `;
 
 S.ContentWrapper = styled.div`
@@ -434,7 +434,7 @@ S.FloatingItem = styled.li`
   }
 
   &:hover {
-    background-color: ${({ $isSelected }) => ($isSelected ? theme.PALETTE.third.light : theme.GRAYSCALE[0])};
+    background-color: ${({ $isSelected }) => ($isSelected ? theme.PALETTE.third.light : theme.PALETTE.white)};
   }
 `;
 
@@ -454,7 +454,7 @@ S.LoadVisionButton = styled.button`
   transition: border-color 0.2s, color 0.2s, background-color 0.2s;
 
   &:hover {
-    background-color: ${theme.GRAYSCALE[0]};
+    background-color: ${theme.PALETTE.white};
   }
 
   &:active {
@@ -491,13 +491,20 @@ S.UploadButtonArea = styled.div`
   transition: border-color 0.2s, background-color 0.2s;
 
   &:hover {
-    background-color: ${theme.GRAYSCALE[0]};
+    background-color: ${theme.PALETTE.white};
   }
 
   &:active {
     border-color: ${theme.PALETTE.third.main};
     background-color: ${theme.PALETTE.white};
   }
+`;
+
+S.UploadIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${theme.GRAYSCALE[9]};
 `;
 
 S.UploadIcon = styled.div`
@@ -539,7 +546,7 @@ S.FileNameContainer = styled.div`
 `;
 
 S.PreviewFileName = styled.span`
-  font-size: ${theme.FONT_SIZE.h12};
+  font-size: ${theme.FONT_SIZE.h11};
   color: ${theme.PALETTE.primary.main};
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -561,7 +568,7 @@ S.DeleteIcon = styled.div`
 
   &:hover {
     transform: scale(1.1);
-    color: ${theme.PALETTE.red};
+    color: ${theme.PALETTE.fourth.main};
   }
 `;
 

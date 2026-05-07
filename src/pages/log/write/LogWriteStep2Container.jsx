@@ -45,7 +45,7 @@ const LogWriteStep2Container = () => {
             <S.Badges>
               <S.BadgeOrange>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4.08317 5.6875V6.5625M6.99984 5.6875V6.5625M9.9165 5.6875V6.5625M12.8332 1.75H1.1665V10.5H3.7915V11.9583L6.70817 10.5H12.8332V1.75Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M4.08317 5.6875V6.5625M6.99984 5.6875V6.5625M9.9165 5.6875V6.5625M12.8332 1.75H1.1665V10.5H3.7915V11.9583L6.70817 10.5H12.8332V1.75Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 작성 중
               </S.BadgeOrange>
@@ -57,7 +57,7 @@ const LogWriteStep2Container = () => {
             </S.LogTitleRow>
           </S.LogHeader>
 
-          <S.TextArea 
+          <S.TextArea
             placeholder={`목표를 이루기 위해서 지금까지 어떤 일이 있었나요?\n\n예시) 기출문제만 계속 풀면서 패턴을 외우면 될 거라 생각했다. 처음 두 달은 순조로웠고, 정답률도 올라가는 것 같아서 자신감이 생겼다.\n그런데 실제 시험 날, 응용 문제들이 생각보다 많이 나왔고 나는 완전히 막혀버렸다. 아는 개념인데 조금만 비틀면 풀지 못했다.\n왜 그랬을까 생각해보니, 나는 '이해'가 아니라 '암기'를 하고 있었던 것 같다.\n시간이 없다는 불안감 때문에 개념을 깊이 파고드는 것을 포기하고 빠른 길을 택했던 것이 결국 발목을 잡았다. 다음엔 기출보다 개념서부터 시작해야겠다고 느꼈다.`}
             value={content}
             onChange={(e) => setContent(e.target.value)}
@@ -66,7 +66,7 @@ const LogWriteStep2Container = () => {
           <S.TipBox>
             <S.TipTitleRow>
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" clipRule="evenodd" d="M7.50023 3.6875C9.21669 3.68754 10.6875 4.73619 11.3088 6.22754C11.411 5.87153 11.7077 5.58621 12.0969 5.51758L13.0198 5.35449C13.5636 5.25871 14.0831 5.62218 14.1789 6.16602C14.2748 6.7098 13.9112 7.22821 13.3674 7.32422L12.4436 7.4873C12.1191 7.5444 11.8043 7.43715 11.5823 7.22656C11.6095 7.41803 11.6252 7.61351 11.6252 7.8125V11.8125H13.4377C13.9899 11.8126 14.4377 12.2603 14.4377 12.8125C14.4377 13.3647 13.9899 13.8124 13.4377 13.8125H1.87523C1.32298 13.8125 0.875233 13.3648 0.875233 12.8125C0.875233 12.2602 1.32298 11.8125 1.87523 11.8125H3.37523V7.8125C3.37523 7.6135 3.39096 7.41804 3.4182 7.22656C3.19618 7.43726 2.8814 7.5444 2.55687 7.4873L1.63305 7.32422C1.08928 7.22821 0.726618 6.70983 0.822499 6.16602C0.918459 5.6222 1.43685 5.25861 1.9807 5.35449L2.90355 5.51758C3.29276 5.58627 3.58951 5.87154 3.69164 6.22754C4.31298 4.7362 5.78376 3.6875 7.50023 3.6875ZM7.50023 5.6875C6.32658 5.6875 5.37523 6.63885 5.37523 7.8125V11.8125H9.62523V7.8125C9.62523 6.63888 8.67384 5.68756 7.50023 5.6875ZM10.4504 2.27246C10.8055 1.84954 11.4366 1.79436 11.8596 2.14941C12.2822 2.50445 12.3373 3.13473 11.9827 3.55762L11.3801 4.27637C11.0251 4.69925 10.3939 4.75416 9.97094 4.39941C9.54793 4.04433 9.49281 3.41324 9.84789 2.99023L10.4504 2.27246ZM3.14183 2.14844C3.5649 1.79391 4.19518 1.8496 4.55004 2.27246L5.15258 2.99023C5.50744 3.4133 5.4525 4.04445 5.02953 4.39941C4.60646 4.75423 3.9753 4.69836 3.62035 4.27539L3.01781 3.55762C2.66312 3.13452 2.71884 2.50333 3.14183 2.14844ZM7.50023 0.5625C8.05243 0.562598 8.50023 1.01028 8.50023 1.5625V2.5C8.50023 3.05222 8.05243 3.4999 7.50023 3.5C6.94798 3.49996 6.50023 3.05226 6.50023 2.5V1.5625C6.50023 1.01024 6.94798 0.562542 7.50023 0.5625Z" fill={theme.PALETTE.red}/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M7.50023 3.6875C9.21669 3.68754 10.6875 4.73619 11.3088 6.22754C11.411 5.87153 11.7077 5.58621 12.0969 5.51758L13.0198 5.35449C13.5636 5.25871 14.0831 5.62218 14.1789 6.16602C14.2748 6.7098 13.9112 7.22821 13.3674 7.32422L12.4436 7.4873C12.1191 7.5444 11.8043 7.43715 11.5823 7.22656C11.6095 7.41803 11.6252 7.61351 11.6252 7.8125V11.8125H13.4377C13.9899 11.8126 14.4377 12.2603 14.4377 12.8125C14.4377 13.3647 13.9899 13.8124 13.4377 13.8125H1.87523C1.32298 13.8125 0.875233 13.3648 0.875233 12.8125C0.875233 12.2602 1.32298 11.8125 1.87523 11.8125H3.37523V7.8125C3.37523 7.6135 3.39096 7.41804 3.4182 7.22656C3.19618 7.43726 2.8814 7.5444 2.55687 7.4873L1.63305 7.32422C1.08928 7.22821 0.726618 6.70983 0.822499 6.16602C0.918459 5.6222 1.43685 5.25861 1.9807 5.35449L2.90355 5.51758C3.29276 5.58627 3.58951 5.87154 3.69164 6.22754C4.31298 4.7362 5.78376 3.6875 7.50023 3.6875ZM7.50023 5.6875C6.32658 5.6875 5.37523 6.63885 5.37523 7.8125V11.8125H9.62523V7.8125C9.62523 6.63888 8.67384 5.68756 7.50023 5.6875ZM10.4504 2.27246C10.8055 1.84954 11.4366 1.79436 11.8596 2.14941C12.2822 2.50445 12.3373 3.13473 11.9827 3.55762L11.3801 4.27637C11.0251 4.69925 10.3939 4.75416 9.97094 4.39941C9.54793 4.04433 9.49281 3.41324 9.84789 2.99023L10.4504 2.27246ZM3.14183 2.14844C3.5649 1.79391 4.19518 1.8496 4.55004 2.27246L5.15258 2.99023C5.50744 3.4133 5.4525 4.04445 5.02953 4.39941C4.60646 4.75423 3.9753 4.69836 3.62035 4.27539L3.01781 3.55762C2.66312 3.13452 2.71884 2.50333 3.14183 2.14844ZM7.50023 0.5625C8.05243 0.562598 8.50023 1.01028 8.50023 1.5625V2.5C8.50023 3.05222 8.05243 3.4999 7.50023 3.5C6.94798 3.49996 6.50023 3.05226 6.50023 2.5V1.5625C6.50023 1.01024 6.94798 0.562542 7.50023 0.5625Z" fill={theme.PALETTE.fourth.main} />
               </svg>
               <S.TipTitle>작성 팁!!</S.TipTitle>
             </S.TipTitleRow>
@@ -95,7 +95,7 @@ S.Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 60px 20px;
-  background-color: ${theme.GRAYSCALE[10]};
+  background-color: #F8F9FA;
 `;
 
 S.Header = styled.div`
@@ -224,8 +224,8 @@ S.BadgeOrange = styled.span`
   gap: 4px;
   width: 67px;
   height: 20px;
-  background-color: ${theme.PALETTE.warning.light};
-  color: ${theme.PALETTE.warning.main};
+  background-color: #FFF8F1;
+  color: ${theme.TEXT_COLOR.warning};
   border-radius: 6px;
   font-size: 11px;
   font-weight: ${theme.FONT_WEIGHT.bold};
@@ -238,7 +238,7 @@ S.BadgeBlue = styled.span`
   justify-content: center;
   width: 56px;
   height: 20px;
-  background-color: ${theme.PALETTE.primary.extraLight};
+  background-color: ${theme.PALETTE.primary.light};
   color: ${theme.PALETTE.primary.main};
   border-radius: 6px;
   font-size: 11px;
@@ -281,30 +281,41 @@ S.TextArea = styled.textarea`
 `;
 
 S.TipBox = styled.div`
-  background-color: ${theme.PALETTE.primary.extraLight}; 
-  padding: 20px 24px;
+  width: 782px;
+  min-height: 60px;
+  height: auto;
+  background-color: ${theme.PALETTE.primary.light}; 
+  padding: 12px 24px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 30px;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
 `;
 
 S.TipTitleRow = styled.div`
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-shrink: 0;
 `;
 
 S.TipTitle = styled.span`
   color: ${theme.PALETTE.primary.main};
-  font-size: ${theme.FONT_SIZE.h10};
+  font-size: ${theme.FONT_SIZE.h9};
   font-weight: ${theme.FONT_WEIGHT.bold};
+  white-space: nowrap;
 `;
 
 S.TipDesc = styled.p`
   color: ${theme.PALETTE.primary.main};
-  font-size: ${theme.FONT_SIZE.h11};
+  font-size: ${theme.FONT_SIZE.h10}; 
+  line-height: 1.4;
+  margin: 0;
+  word-break: keep-all;
+  word-wrap: break-word;
 `;
 
 S.ButtonContainer = styled.div`
@@ -329,7 +340,7 @@ S.TempSaveButton = styled.button`
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: ${theme.PALETTE.primary.extraLight};
+    background-color: ${theme.PALETTE.primary.light};
   }
 `;
 
@@ -349,7 +360,7 @@ S.AnalyzeButton = styled.button`
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: ${theme.PALETTE.primary.dark};
+    opacity: 0.9;
   }
 `;
 
