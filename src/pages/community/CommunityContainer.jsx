@@ -6,6 +6,7 @@ import CommunityBestPost from './list/components/CommunityBestPost';
 import CommunityPopularPostContainer from './list/components/CommunityPopularPostContainer';
 import CommunityPostSearchContainer from './list/components/CommunityPostSearchContainer';
 import myStyle from './styles/CommunityContainerStyle'
+import CommunityListContainer from './list/CommunityListContainer'
 
 import S from './style'
 
@@ -25,7 +26,9 @@ const CommunityContainer = () => {
                 {/* 좌측 : 커뮤니티 게시글 */}
                 {/* 우측 맞춤 게시글 */}
                 <S.Wrapper margintop={"55px"}>
-                    <myStyle.PostListAndAiRecommandPostWrapper>테스트</myStyle.PostListAndAiRecommandPostWrapper>
+                    <myStyle.PostListAndAiRecommandPostWrapper>
+                        <CommunityListContainer></CommunityListContainer>
+                    </myStyle.PostListAndAiRecommandPostWrapper>
                 </S.Wrapper>
             </myStyle.ListBgWrap>
         </div>
