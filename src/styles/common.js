@@ -60,22 +60,22 @@ export const flexEndRow = css`
 export const h1Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h1};
   line-height: ${({ theme }) => theme.FONT_LINE.h1};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h1Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h1};
   line-height: ${({ theme }) => theme.FONT_LINE.h1};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h1Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h1};
   line-height: ${({ theme }) => theme.FONT_LINE.h1};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -85,22 +85,22 @@ export const h1Regular = css`
 export const h2Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h2};
   line-height: ${({ theme }) => theme.FONT_LINE.h2};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h2Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h2};
   line-height: ${({ theme }) => theme.FONT_LINE.h2};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h2Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h2};
   line-height: ${({ theme }) => theme.FONT_LINE.h2};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -110,22 +110,22 @@ export const h2Regular = css`
 export const h3Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h3};
   line-height: ${({ theme }) => theme.FONT_LINE.h3};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h3Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h3};
   line-height: ${({ theme }) => theme.FONT_LINE.h3};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h3Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h3};
   line-height: ${({ theme }) => theme.FONT_LINE.h3};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -135,22 +135,22 @@ export const h3Regular = css`
 export const h3_2Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h3_2};
   line-height: ${({ theme }) => theme.FONT_LINE.h3_2};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h3_2Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h3_2};
   line-height: ${({ theme }) => theme.FONT_LINE.h3_2};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h3_2Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h3_2};
   line-height: ${({ theme }) => theme.FONT_LINE.h3_2};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -160,22 +160,22 @@ export const h3_2Regular = css`
 export const h4Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h4};
   line-height: ${({ theme }) => theme.FONT_LINE.h4};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h4Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h4};
   line-height: ${({ theme }) => theme.FONT_LINE.h4};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h4Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h4};
   line-height: ${({ theme }) => theme.FONT_LINE.h4};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -185,22 +185,22 @@ export const h4Regular = css`
 export const h5Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h5};
   line-height: ${({ theme }) => theme.FONT_LINE.h5};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h5Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h5};
   line-height: ${({ theme }) => theme.FONT_LINE.h5};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h5Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h5};
   line-height: ${({ theme }) => theme.FONT_LINE.h5};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -210,22 +210,22 @@ export const h5Regular = css`
 export const h6Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h6};
   line-height: ${({ theme }) => theme.FONT_LINE.h6};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h6Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h6};
   line-height: ${({ theme }) => theme.FONT_LINE.h6};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h6Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h6};
   line-height: ${({ theme }) => theme.FONT_LINE.h6};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -235,22 +235,22 @@ export const h6Regular = css`
 export const h7Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h7};
   line-height: ${({ theme }) => theme.FONT_LINE.h7};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h7Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h7};
   line-height: ${({ theme }) => theme.FONT_LINE.h7};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h7Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h7};
   line-height: ${({ theme }) => theme.FONT_LINE.h7};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -260,22 +260,22 @@ export const h7Regular = css`
 export const h8Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h8};
   line-height: ${({ theme }) => theme.FONT_LINE.h8};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h8Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h8};
   line-height: ${({ theme }) => theme.FONT_LINE.h8};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h8Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h8};
   line-height: ${({ theme }) => theme.FONT_LINE.h8};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -285,22 +285,22 @@ export const h8Regular = css`
 export const h9Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h9};
   line-height: ${({ theme }) => theme.FONT_LINE.h9};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h9Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h9};
   line-height: ${({ theme }) => theme.FONT_LINE.h9};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h9Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h9};
   line-height: ${({ theme }) => theme.FONT_LINE.h9};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -310,22 +310,22 @@ export const h9Regular = css`
 export const h10Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h10};
   line-height: ${({ theme }) => theme.FONT_LINE.h10};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h10Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h10};
   line-height: ${({ theme }) => theme.FONT_LINE.h10};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h10Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h10};
   line-height: ${({ theme }) => theme.FONT_LINE.h10};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 // ─────────────────────────────────────────
@@ -334,18 +334,18 @@ export const h10Regular = css`
 
 export const h11Extrabold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h11};
-  font-weight: ${({ theme }) => theme.FONT_WEIGHT.Extrabold};
-  letter-spacing: -0.02em;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT.extrabold};
+  letter-spacing: -0.03em;
 `;
 
 export const h11Bold = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h11};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.bold};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
 
 export const h11Regular = css`
   font-size: ${({ theme }) => theme.FONT_SIZE.h11};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 `;
