@@ -1,4 +1,5 @@
 import React from 'react';
+import S from '../styles/MyProfileStyle'; // 경로가 맞는지 꼭 확인하세요!
 
 const AccountDataComponent = ({
   memberEmail,
@@ -11,56 +12,55 @@ const AccountDataComponent = ({
   onUnregister
 }) => {
   return (
-    <div className="info-card account-data-card">
-      <h3 className="card-title">계정 정보</h3>
-      
-      <div className="account-list">
-        {/* 아이디 (이메일) */}
-        <div className="account-item">
-          <div className="item-label">아이디</div>
-          <div className="item-content">
-            <span className="email-text">{memberEmail}</span>
+    <S.AccountDataCard>
+      <S.AccountList>
+        {/* 아이디 섹션 */}
+        <S.AccountItem>
+          <div className="ItemLabel">아이디</div>
+          <div className="ItemContent">
+            <span className="EmailText">{memberEmail || 'test@example.com'}</span>
+            <p className="SubNotice">
+              • 소셜 계정으로 가입된 유저의 경우, 이메일은 별도로 변경 안됨을 알려드립니다.<br/>
+              • 본인의 연동된 계정 소셜 계정에서 변경해 주세요.
+            </p>
           </div>
-          <button className="item-btn" onClick={onEmailChange}>연락처 변경</button>
-        </div>
+          <button className="ItemBtn" onClick={onEmailChange}>연락처 변경</button>
+        </S.AccountItem>
 
-        {/* 본인인증 상태 */}
-        <div className="account-item">
-          <div className="item-label">본인인증</div>
-          <div className="item-content">
+        {/* 본인인증 섹션 */}
+        <S.AccountItem>
+          <div className="ItemLabel">본인인증</div>
+          <div className="ItemContent">
             {memberPhoneVerified === 1 ? (
-              <div className="verified-status">
-                <span className="status-badge">인증됨</span>
-                <span className="user-info">{memberName} / {memberPhone}</span>
+              <div className="VerifiedStatus">
+                <span className="StatusBadge">인증됨</span>
+                <span className="UserInfoText">{memberName} / {memberPhone}</span>
               </div>
             ) : (
-              <span className="unverified-text">인증이 필요합니다.</span>
+              <span className="UnverifiedText">인증이 필요합니다.</span>
             )}
+            <p className="SubNotice">• 본인 명의 휴대폰 번호를 변경하려면, 다시 본인인증을 진행하셔야 합니다.</p>
           </div>
-          <button className="item-btn" onClick={onPhoneVerify}>
-            {memberPhoneVerified === 1 ? '실명 수정' : '인증하기'}
+          <button className="ItemBtn" onClick={onPhoneVerify}>
+            {memberPhoneVerified === 1 ? '실명수정' : '인증하기'}
           </button>
-        </div>
+        </S.AccountItem>
 
-        {/* 비밀번호 변경 */}
-        <div className="account-item">
-          <div className="item-label">비밀번호</div>
-          <div className="item-content">
-            <span className="password-masking">********</span>
-          </div>
-          <button className="item-btn" onClick={onPasswordChange}>비밀번호 변경</button>
-        </div>
+        {/* 비밀번호 변경 섹션 */}
+        <S.AccountItem>
+          <div className="ItemLabel">비밀번호 변경</div>
+          <div className="ItemContent"></div>
+          <button className="ItemBtn" onClick={onPasswordChange}>변경</button>
+        </S.AccountItem>
 
-        {/* 회원 탈퇴 */}
-        <div className="account-item unregister-item">
-          <div className="item-label">회원탈퇴</div>
-          <div className="item-content">
-            <span className="notice-text">계정을 삭제하면 모든 데이터가 복구되지 않습니다.</span>
-          </div>
-          <button className="item-btn delete-btn" onClick={onUnregister}>탈퇴하기</button>
-        </div>
-      </div>
-    </div>
+        {/* 회원탈퇴 섹션 */}
+        <S.AccountItem>
+          <div className="ItemLabel">회원탈퇴</div>
+          <div className="ItemContent"></div>
+          <button className="ItemBtn UnregisterBtn" onClick={onUnregister}>탈퇴하기</button>
+        </S.AccountItem>
+      </S.AccountList>
+    </S.AccountDataCard>
   );
 };
 

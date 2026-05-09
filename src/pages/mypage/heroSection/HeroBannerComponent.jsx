@@ -1,14 +1,15 @@
 import React from "react";
+import S from "./styles/HeroSectionStyles";
 
 const HeroBannerComponent = ({ title, description, onClick }) => (
-  <div className="HeroBanner" onClick={onClick}>
-    <div className="BannerContent">
+  <S.HeroBanner onClick={onClick}>
+    <S.BannerContent>
       <h2>{title}</h2>
       <p>{description}</p>
-      <button className="GoBtn">바로가기</button>
-    </div>
-    <div className="BannerGraphic"></div>
-  </div>
+      <S.GoBtn>바로가기</S.GoBtn>
+    </S.BannerContent>
+    <S.BannerGraphic />
+  </S.HeroBanner>
 );
 
 export default HeroBannerComponent;

@@ -1,10 +1,11 @@
-import react from "react";
+import React from "react";
+import S from "./styles/HeroSectionStyles";
 
 const QuickMenuCardComponent = ({ title, icon, color, size = "small" }) => (
-  <div className={`QuickCard ${size}`} style={{ backgroundColor: color }}>
-    <div className="CardIcon">{icon}</div>
-    <span className="CardTitle">{title}</span>
-  </div>
+  <S.QuickCard size={size} bgColor={color}>
+    <S.CardIcon>{icon}</S.CardIcon>
+    <S.CardTitle>{title}</S.CardTitle>
+  </S.QuickCard>
 );
 
 export default QuickMenuCardComponent;
