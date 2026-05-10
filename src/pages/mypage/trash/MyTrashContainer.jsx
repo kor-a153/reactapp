@@ -3,7 +3,7 @@ import React from 'react';
 const MyTrashContainer = () => {
     return (
         <div>
-            휴지통
+            내 게시글 
         </div>
     );
 };

@@ -2,13 +2,18 @@ import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import PageS from './styles/MyPageWrapper'; 
-import HeroS from './styles/HeroSectionStyles'; 
 import InfoS from './styles/InfoManagementStyles'; 
 import CommS from './styles/CommunityStyles'; 
+
+import mainImg from '../heroSection/resources/fail-logs.png';
+import mylogImg from '../heroSection/resources/my-fail-log.png';
+import likesImg from '../heroSection/resources/likes.png';
+import guestbookImg from '../heroSection/resources/guestbook.png';
 
 import ProfileCardComponent from './components/ProfileCardComponent';
 import AccountDataComponent from './components/AccountDataComponent';
 import MyCommunityContainer from './components/MyCommunityContainer';
+import HeroRotationComponent from '../heroSection/HeroRotationComponents';
 
 const MyProfileContainer = () => {
   const location = useLocation();
@@ -32,15 +37,17 @@ const MyProfileContainer = () => {
       subTitle: "페일로그를 작성해보고 싶다면",
       title: "페일로그 바로가기",
       description: "실패를 기록하고 성장의 발판으로 삼으세요.",
-      bgColor: "#E8EBFD"
+      bgColor: "#E8EBFD",
+      img: mainImg
     },
     {
-      id: "mylog",
-      path: "/my-page/my-fail-logs",
+      id: "my-fail-log",
+      path: "/my-page/fail-logs",
       subTitle: "내가 작성한 로그를 보고 싶다면",
       title: "마이 페일로그",
       description: "내가 작성한 로그를 볼 수 있어요.",
-      bgColor: "#F0F3FF"
+      bgColor: "#F0F3FF",
+      img: mylogImg
     },
     {
       id: "likes",
@@ -48,7 +55,8 @@ const MyProfileContainer = () => {
       subTitle: "참고하고 싶은 게시글을 모아둔",
       title: "좋아요 한 페일로그",
       description: "좋아요 한 게시글을 모아 볼 수 있어요.",
-      bgColor: "#EBF8FF"
+      bgColor: "#EBF8FF",
+      img: likesImg
     },
     {
       id: "guestbook",
@@ -56,7 +64,8 @@ const MyProfileContainer = () => {
       subTitle: "다른 사람들과 소통하는",
       title: "페일로그 방명록",
       description: "내게 남긴 말을 확인해보세요.",
-      bgColor: "#EEF2FF"
+      bgColor: "#EEF2FF",
+      img: guestbookImg
     }
   ];
 
@@ -71,42 +80,11 @@ const MyProfileContainer = () => {
   return (
     <PageS.MainWrapper>
       {/* 상단 히어로 섹션 */}
-      <HeroS.HeroSectionContainer>
-        <HeroS.HeroGrid>
-          {/* 왼쪽 메인 배너 영역 */}
-          <HeroS.HeroBanner 
-            onClick={() => navigate(mainContent.path)}
-            style={{ backgroundColor: mainContent.bgColor }}
-          >
-            <div className="TextGroup">
-              <h3>{mainContent.subTitle}</h3>
-              <h2>{mainContent.title}</h2>
-              <p>{mainContent.description}</p>
-            </div>
-            <HeroS.GraphicPlaceholder>
-              <div className="Box" /><div className="Box" /><div className="Box" />
-            </HeroS.GraphicPlaceholder>
-          </HeroS.HeroBanner>
-
-          {/* 오른쪽 퀵 메뉴 그룹 */}
-          <HeroS.QuickMenuGroup>
-            {quickMenus.map((menu) => (
-              <HeroS.QuickCard 
-                key={menu.id} 
-                bgColor={menu.bgColor}
-                onClick={() => navigate(menu.path)}
-              >
-                <div className="CardText">
-                  <h3>{menu.subTitle}</h3>
-                  <h2>{menu.title}</h2>
-                  <span>{menu.description}</span>
-                </div>
-                <div className="IconCircle" />
-              </HeroS.QuickCard>
-            ))}
-          </HeroS.QuickMenuGroup>
-        </HeroS.HeroGrid>
-      </HeroS.HeroSectionContainer>
+      {/* 💡 핵심: 데이터를 props로 넘겨줍니다. */}
+      <HeroRotationComponent 
+        mainContent={mainContent} 
+        quickMenus={quickMenus} 
+      />
 
       {/* 개인 정보 관리 섹션 */}
       <InfoS.InfoManagementSection>

@@ -2,123 +2,127 @@ import styled from "styled-components";
 
 const S = {};
 
-// 1. 최상위 섹션
 S.HeroSectionContainer = styled.section`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
 `;
 
-// 2. 시안의 핵심인 1.5 : 1 그리드
 S.HeroGrid = styled.div`
   display: grid;
-  grid-template-columns: 1.5fr 1fr; 
+  grid-template-columns: 648px 424px; 
   gap: 20px;
-  
-  @media (max-width: 1024px) {
-    grid-template-columns: 1fr; // 모바일/태블릿에선 한 줄로
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 20px;
   }
 `;
 
-// 3. 왼쪽 메인 배너 (큰 영역)
 S.HeroBanner = styled.div`
-  background-color: #E8EBFD; // 시안의 연보라색 배경
-  border-radius: 30px;
-  padding: 60px;
+  width: 648px;
+  height: 730px;
+  background-color: #E8EBFD;
+  border-radius: 25px;
+  padding: 60px 56px; 
   display: flex;
   flex-direction: column;
-  min-height: 500px;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 
   .TextGroup {
-    h3 {
-      font-size: 18px;
-      color: #5D5FEF; // 상단 작은 텍스트 컬러
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-    h2 {
-      font-size: 40px;
-      font-weight: 800;
-      color: #2D3494; // 메인 타이틀 컬러
-      margin-bottom: 12px;
-    }
-    p {
-      font-size: 18px;
-      color: #4B5563;
-      font-weight: 500;
-    }
-  }
-
-  /* 하단 아이콘들이 들어갈 그래픽 영역 (모습만 잡기) */
-  .GraphicPlaceholder {
-    margin-top: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    
-    .Box {
-      aspect-ratio: 1;
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+    position: relative;
+    z-index: 2;
+    font-family: 'Pretendard', sans-serif;
+    & > * { margin: 0; white-space: nowrap; }
+    h3 { font-size: 24px; font-weight: 400; color: #5D5FEF; line-height: 34px; }
+    h2 { font-size: 45px; font-weight: 800; color: #2D3494; line-height: 60px; letter-spacing: -0.02em; }
+    p { font-size: 24px; font-weight: 400; color: #4B5563; line-height: 34px; }
   }
 `;
 
-// 4. 오른쪽 카드 3개를 담는 바구니
+S.MainGraphic = styled.div`
+  position: absolute;
+  right: 0px;
+  bottom: -155px;
+  width: 600px;
+  height: 600px;
+  z-index: 1;
+  img { width: 100%; height: 100%; object-fit: contain; }
+`;
+
 S.QuickMenuGroup = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 11px;
 `;
 
-// 5. 오른쪽 개별 카드 (세로로 쌓임)
-S.QuickCard = styled.div`
-  flex: 1;
-  background-color: ${(props) => props.bgColor || "#F1F5F9"};
+// 모든 카드의 공통 베이스 스타일
+const BaseCard = styled.div`
+  width: 424px;
+  height: 236px;
   border-radius: 24px;
-  padding: 30px;
+  position: relative;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: relative;
-  min-height: 153px; // 3개가 모여 메인 배너와 높이가 맞도록 조절
-  cursor: pointer;
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: translateX(10px);
+  overflow: visible; 
+  padding: 40px;
+  
+  .CardText {
+    position: relative;
+    z-index: 2;
+    & > * { margin: 0; white-space: nowrap; }
+    h3 { font-size: 20px; font-weight: 400; color: #5D5FEF; }
+    h2 { font-size: 36px; font-weight: 700; color: #1E293B; }
+    span { font-size: 20px; color: #64748B; }
   }
+`;
+
+// 1. 마이 페일로그 카드
+S.MyLogCard = styled(BaseCard)`
+  background-color: #F0F3FF;
+`;
+
+// 2. 좋아요 한 페일로그 카드 (독립적인 배치)
+S.LikesCard = styled(BaseCard)`
+  background-color: #EBF8FF;
+  padding-top: 50px;
+  padding-right: 45px;
+  align-items: flex-end;
 
   .CardText {
-    h3 {
-      font-size: 14px;
-      color: #4B5563;
-      margin-bottom: 4px;
+    text-align: right;
+    
+    & > * {
+      white-space: nowrap;
     }
-    h2 {
-      font-size: 22px;
-      font-weight: 800;
-      color: #1E293B;
-      margin-bottom: 8px;
-    }
-    span {
-      font-size: 14px;
-      color: #64748B;
-    }
-  }
+`;
 
-  /* 카드 우측 아이콘 영역 (모습만 잡기) */
-  .IconCircle {
-    position: absolute;
-    right: 25px;
-    width: 70px;
-    height: 70px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
+// 3. 방명록 카드
+S.GuestBookCard = styled(BaseCard)`
+  background-color: #EEF2FF;
+`;
+
+// 카드 아이콘 공통 및 개별 위치
+S.CardIcon = styled.div`
+  position: absolute;
+  right: -15px;
+  bottom: -10px;
+  width: 180px;
+  height: 180px;
+  z-index: 5;
+  img { width: 100%; height: 100%; object-fit: contain; }
+
+  /* 좋아요 카드(LikesCard) 내부 아이콘 전용 수치 */
+  ${S.LikesCard} & {
+    right: 273px;
+    bottom: -22px;
+    width: 150px;
   }
 `;
 

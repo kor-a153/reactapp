@@ -12,7 +12,7 @@
       <QuickMenuCard 
         title="마이 페일로그" 
         description="내가 작성한 로그를 볼 수 있어요." 
-        bgColor="#F0F3FF" 
+        bgColor="#F0F3FF"
       />
       <QuickMenuCard 
         title="좋아요 한 페일로그" 
