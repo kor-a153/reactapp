@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import S, { colorCSS } from '../../style';
+import S, { boxShadow, colorCSS } from '../../style';
 import AiPost from './AiPost';
 import aiImage from '../../resources/ai_image.svg';
 
@@ -81,6 +81,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
+  ${boxShadow["boxBasic"]}
 `;
 
 const Header = styled.div`

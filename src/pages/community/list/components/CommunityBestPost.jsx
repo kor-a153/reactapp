@@ -9,8 +9,10 @@ import eye from '../../resources/eye.svg'
 import heart from '../../resources/like.svg'
 import post from '../../resources/post.svg'
 import heartFill from '../../resources/like-fill.svg'
+import { useNavigate } from 'react-router-dom';
 
 const CommunityBestPost = ({
+  id,
   title,
   content,
   date,
@@ -32,6 +34,8 @@ const CommunityBestPost = ({
   // views 99
   // likes 777
   // comments 999
+
+  const navigate = useNavigate();
 
   const myStyle = CommunityBestPostStyle;
 
@@ -77,7 +81,7 @@ const CommunityBestPost = ({
                           </myStyle.UserInfo>
                         </myStyle.BestPostMainInfo>
                         <myStyle.BestPostMainButton>
-                          <myStyle.GoPostInfoButton>
+                          <myStyle.GoPostInfoButton onClick={() => navigate("detail/"+id)}>
                               <S.Span size={"h8ExBold8"} color={"faillog_purple"}>게시글 상세보기</S.Span>
                               <S.Span size={"h8ExBold8"} color={"faillog_purple"}>→</S.Span>
                           </myStyle.GoPostInfoButton>

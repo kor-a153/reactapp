@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colorCSS } from '../../style';
+import { boxShadow, colorCSS } from '../../style';
 import Post from './Post';
 import PostListEmptyContainer from './PostListEmptyContainer';
 
@@ -10,6 +10,7 @@ myStyle.wrapper = styled.div`
     width: 984px;
     background-color: ${colorCSS["faillog_white"]};
     border-radius: 15px;
+    ${boxShadow["boxBasic"]}
 `
 
 const Posts = ({postData}) => {

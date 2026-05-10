@@ -109,6 +109,7 @@ const CommunityContainer = () => {
   bestPost.likes = 777
   bestPost.comments = 999
   bestPost.isLike = false
+  bestPost.id = 3;
     
     return (
         <div>
@@ -118,7 +119,7 @@ const CommunityContainer = () => {
             {/* 저번달 베스트 인기글 */}
             <CommunityBestPost title={bestPost.title} content={bestPost.content} date={bestPost.date}
             thumbnail={bestPost.thumbnail} profile={bestPost.profile} author={bestPost.author} views={bestPost.views}
-            likes={bestPost.likes} comments={bestPost.comments} isLike={bestPost.isLike}/>
+            likes={bestPost.likes} comments={bestPost.comments} isLike={bestPost.isLike} id={bestPost.id}/>
 
             {/* 실시간 인기글 */}
             <CommunityPopularPostContainer posts={popularPosts} />
