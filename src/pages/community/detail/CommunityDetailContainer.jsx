@@ -6,6 +6,7 @@ import PostHeader from './components/PostHeader';
 import icon04 from '../resources/icon04.png';
 import Content from './components/Content';
 import ImagesContainer from './components/ImagesContainer';
+import AuthorInfo from './components/AuthorInfo';
 
 const postData = {
     category: 0,
@@ -34,6 +35,15 @@ const CommunityDetailContainer = () => {
             <Divider />
             <Content />
             <ImagesContainer />
+            <Divider />
+            <AuthorInfo
+                profile={postData.profile}
+                author="취준마스터"
+                postCount={24}
+                faillogCount={18}
+                commentCount={136}
+            />
+            <Divider />
         </Wrapper>
     </Container>
     );
