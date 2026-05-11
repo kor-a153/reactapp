@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 재사용 CSS 조각 (믹스인) 모음
 import { css } from "styled-components";
 
@@ -6,52 +5,24 @@ import { css } from "styled-components";
 // FLEX
 // ─────────────────────────────────────────
 
-=======
-// 공통적인 css를 변수에 담아 사용할 수 있도록 제공하는 파일
-import { css } from "styled-components";
-
->>>>>>> 17daae0710bc1cb9efcfcd5d94e80a749f342c24
 export const flexCenter = css`
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
 `;
-=======
-`
-
-export const flexBeetweenRow = css`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-`
-
-export const flexBeetweenColumn = css`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-`
->>>>>>> 17daae0710bc1cb9efcfcd5d94e80a749f342c24
 
 export const flexCenterRow = css`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-<<<<<<< HEAD
 `;
-=======
-`
->>>>>>> 17daae0710bc1cb9efcfcd5d94e80a749f342c24
 
 export const flexCenterColumn = css`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-<<<<<<< HEAD
 `;
 
 export const flexBetweenRow = css`
@@ -378,30 +349,3 @@ export const h11Regular = css`
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.regular};
   letter-spacing: -0.03em;
 `;
-=======
-`
-
-export const h1ExBold = css`
-  font-size: ${({theme}) => theme.FONT_SIZE["h1"]};
-  line-height: ${({theme}) => theme.FONT_LINE["h1"]};
-  font-weight: ${({theme}) => theme.FONT_WEIGHT["Exbold"]};
-`
-
-export const h1Bold = css`
-  font-size: ${({theme}) => theme.FONT_SIZE["h1"]};
-  line-height: ${({theme}) => theme.FONT_LINE["h1"]};
-  font-weight: ${({theme}) => theme.FONT_WEIGHT["bold"]};
-`
-
-export const h1Medium = css`
-  font-size: ${({theme}) => theme.FONT_SIZE["h1"]};
-  line-height: ${({theme}) => theme.FONT_LINE["h1"]};
-  font-weight: ${({theme}) => theme.FONT_WEIGHT["Medium"]};
-`
-
-export const h1Regular = css`
-  font-size: ${({theme}) => theme.FONT_SIZE["h1"]};
-  line-height: ${({theme}) => theme.FONT_LINE["h1"]};
-  font-weight: ${({theme}) => theme.FONT_WEIGHT["Regular"]};
-`
->>>>>>> 17daae0710bc1cb9efcfcd5d94e80a749f342c24
