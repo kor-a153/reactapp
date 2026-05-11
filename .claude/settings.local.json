@@ -1,22 +1,8 @@
 {
   "permissions": {
     "allow": [
-<<<<<<< HEAD
       "PowerShell(Get-ChildItem -Path \"c:\\\\back_0900_kyj\\\\team_project\\\\reactapp\\\\src\" -Recurse -File | Where-Object {$_.Name -match \"\\(?i\\)header\"} | Select-Object -ExpandProperty FullName)",
       "Bash(findstr /i \"styled\")"
-=======
-      "Bash(mkdir -p \"d:/back_0900_kyj/project/reactapp/src/pages/templates2\")",
-      "Bash(mv \"d:/back_0900_kyj/project/reactapp/src/pages/auth\" \"d:/back_0900_kyj/project/reactapp/src/pages/templates2/\")",
-      "Bash(mv \"d:/back_0900_kyj/project/reactapp/src/pages/case\" \"d:/back_0900_kyj/project/reactapp/src/pages/templates2/\")",
-      "Bash(mv \"d:/back_0900_kyj/project/reactapp/src/pages/chat\" \"d:/back_0900_kyj/project/reactapp/src/pages/templates2/\")",
-      "Bash(mv \"d:/back_0900_kyj/project/reactapp/src/pages/common\" \"d:/back_0900_kyj/project/reactapp/src/pages/templates2/\")",
-      "Bash(cp -r \"d:/back_0900_kyj/project/reactapp/src/pages/growth\" \"d:/back_0900_kyj/project/reactapp/src/pages/templates2/\")",
-      "Bash(cp -r \"d:/back_0900_kyj/project/reactapp/src/pages/log\" \"d:/back_0900_kyj/project/reactapp/src/pages/templates2/\")",
-      "Bash(cp -r \"d:/back_0900_kyj/project/reactapp/src/pages/plan\" \"d:/back_0900_kyj/project/reactapp/src/pages/templates2/\")",
-      "Bash(cp -r \"d:/back_0900_kyj/project/reactapp/src/pages/user\" \"d:/back_0900_kyj/project/reactapp/src/pages/templates2/\")",
-      "Bash(cp \"d:/back_0900_kyj/project/reactapp/src/pages/IntroPage.jsx\" \"d:/back_0900_kyj/project/reactapp/src/pages/templates2/\")",
-      "Bash(npx react-scripts *)"
->>>>>>> 17daae0710bc1cb9efcfcd5d94e80a749f342c24
     ]
   }
 }
