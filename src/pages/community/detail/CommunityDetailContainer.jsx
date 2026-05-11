@@ -5,6 +5,7 @@ import { boxShadow, colorCSS } from '../style';
 import PostHeader from './components/PostHeader';
 import icon04 from '../resources/icon04.png';
 import Content from './components/Content';
+import ImagesContainer from './components/ImagesContainer';
 
 const postData = {
     category: 0,
@@ -32,6 +33,7 @@ const CommunityDetailContainer = () => {
             />
             <Divider />
             <Content />
+            <ImagesContainer />
         </Wrapper>
     </Container>
     );
@@ -46,7 +48,7 @@ const Container = styled.div`
 `
 
 const Divider = styled.hr`
-    width: 1266px;
+    width: 1268px;
     border: none;
     border-top: 1px solid ${colorCSS["faillog_gray4"]};
     margin: 0;

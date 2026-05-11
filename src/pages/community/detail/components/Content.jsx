@@ -28,8 +28,8 @@ const Content = () => {
 
 const Wrapper = styled.div`
   padding-top: 25px;
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 25px;
+  padding-right: 25px;
   width: 1320px;
   padding-bottom: 11px;
   display: flex;
