@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import myStyle from '../../styles/SearchComponentStyle'
 
-import shine from '../../resources/shine.png'
-import upArrow from '../../resources/arrow-up.png'
+import shine from '../../resources/shine.svg'
+import upArrow from '../../resources/arrow-up.svg'
 
 const SearchComponent = ({onSubmit}) => {
 

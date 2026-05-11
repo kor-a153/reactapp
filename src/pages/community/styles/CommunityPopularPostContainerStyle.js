@@ -27,6 +27,12 @@ S.header = styled.div`
   width: 1320px;
 `
 
+S.headerTestOneDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 15px;
+`
+
 S.headerTextTwoDiv = styled.div`
   margin-top: 13px;
 `
@@ -71,7 +77,7 @@ S.Card = styled.div`
 S.CardImageWrap = styled.div`
   width: 100%;
   height: 44%;
-  background: ${({ bgColor }) => bgColor || colorCSS["faillog_gray1"]};
+  background: ${colorCSS["faillog_gray4"]};
   flex-shrink: 0;
 
   ${flexCenterRow}
@@ -153,7 +159,13 @@ S.AuthorAvatar = styled.img`
 S.Stats = styled.div`
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+`
+
+S.postInfo = styled.span`
+  display: flex;
+  align-items: center;
+  gap: 5px;
 `
 
 S.StatItem = styled.span`
