@@ -143,7 +143,11 @@ const LogWriteStep1Container = () => {
               <S.FloatingList>
                 {visions.length > 0 ? (
                   visions.map((pv, idx) => (
-                    <S.FloatingItem key={idx} onClick={() => handleVisionSelect(pv)}>
+                    <S.FloatingItem
+                      key={idx}
+                      $isSelected={vision === pv}
+                      onClick={() => handleVisionSelect(pv)}
+                    >
                       {pv}
                     </S.FloatingItem>
                   ))
@@ -427,15 +431,31 @@ S.FloatingItem = styled.li`
   color: ${theme.TEXT_COLOR.basic};
   cursor: pointer;
   background-color: ${({ $isSelected }) => ($isSelected ? theme.PALETTE.third.light : 'transparent')};
+  
+  /* Prevent layout shift by using a transparent border initially */
+  border: 1.5px solid transparent;
   border-bottom: 1px solid ${theme.GRAYSCALE[2]};
+  position: relative;
+  transition: border-color 0.1s ease;
 
   &:last-child {
-    border-bottom: none;
+    border-bottom: 1.5px solid transparent;
   }
 
   &:hover {
-    background-color: ${({ $isSelected }) => ($isSelected ? theme.PALETTE.third.light : theme.PALETTE.white)};
+    border: 1.5px solid ${theme.PALETTE.third.main};
+    border-radius: 8px;
+    z-index: 1;
+    /* Maintain background color as per user request */
+    background-color: ${({ $isSelected }) => ($isSelected ? theme.PALETTE.third.light : 'transparent')};
   }
+
+  /* Apply the same border for selected items as seen in the photo */
+  ${({ $isSelected }) => $isSelected && `
+    border: 1.5px solid ${theme.PALETTE.third.main};
+    border-radius: 8px;
+    z-index: 1;
+  `}
 `;
 
 S.LoadVisionButton = styled.button`

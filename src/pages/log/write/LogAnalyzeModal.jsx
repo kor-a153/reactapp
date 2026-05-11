@@ -98,7 +98,7 @@ const LogAnalyzeModal = ({ onClose }) => {
   useEffect(() => {
     if (step === 4) {
       const timer = setTimeout(() => {
-        navigate('/logs/result/1/detail');
+        navigate('/logs/result/my/detail');
       }, 2000);
       return () => clearTimeout(timer);
     }
