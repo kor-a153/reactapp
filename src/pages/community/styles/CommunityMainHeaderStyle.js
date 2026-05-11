@@ -29,8 +29,18 @@ CommunityMainHeaderStyle.MainHeader = styled.div`
 CommunityMainHeaderStyle.MainHeaderLeftDiv = styled.div`
   /* background-color: yellow; */
 `
+CommunityMainHeaderStyle.MainHeaderLeftTextTopDiv = styled.div`
+  display: flex;
+  gap: 15px;
+  align-items: center;
+`
 
-CommunityMainHeaderStyle.MainHeaderLeftTextOneDiv = styled.div`
+CommunityMainHeaderStyle.headerImg = styled.img`
+  width: 60px;
+  height: 60px;
+`
+
+CommunityMainHeaderStyle.MainHeaderLeftTextBottomDiv = styled.div`
   margin-top: 13px;
 `
 

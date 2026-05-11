@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import S from '../../style';
 import myStyle from '../../styles/CommunitySearchOrder2ComponentStyle'
 
-import downImage from '../../resources/down.png'
+import downImage from '../../resources/down.svg'
 
 const OPTIONS = ["최신순", "좋아요 순", "조회 순"];
 
@@ -12,6 +12,7 @@ const CommunitySearchOrder2Component = ({ defaultValue = "최신순", onChange }
   const wrapperRef = useRef(null);
 
   const handleSelect = (option) => {
+    if (option === selected) { setIsOpen(false); return; }
     setSelected(option);
     setIsOpen(false);
     onChange?.(option);
@@ -30,7 +31,7 @@ const CommunitySearchOrder2Component = ({ defaultValue = "최신순", onChange }
   return (
     <myStyle.Wrapper ref={wrapperRef}>
       <myStyle.Trigger onClick={() => setIsOpen((prev) => !prev)}>
-        <S.Span size="h8-regular" color="faillog-black">{selected}</S.Span>
+        <S.Span size="h8Regular" color="faillog-black">{selected}</S.Span>
         <myStyle.ChevronImg isOpen={isOpen} src={downImage}></myStyle.ChevronImg>
       </myStyle.Trigger>
 
@@ -42,9 +43,9 @@ const CommunitySearchOrder2Component = ({ defaultValue = "최신순", onChange }
               key={option}
               $isfirst={option === "제목"}
               $selected={option === selected}
-              onClick={() => handleSelect(option)}
+              onClick={() => {handleSelect(option)}}
             >
-              <S.Span size="h8-regular" color=
+              <S.Span size="h8Regular" color=
               {option === selected ? "faillog_purple" : "faillog-black"}>{option}</S.Span>
             </myStyle.OptionItem>
           ))}

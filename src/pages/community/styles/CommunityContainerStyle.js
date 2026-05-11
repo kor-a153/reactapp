@@ -6,6 +6,8 @@ const S = {}
 //게시글목록, ai추천글컨테이너 래퍼
 S.PostListAndAiRecommandPostWrapper = styled.div`
     width: 1320px;
+    display: flex;
+    gap: 24px;
 `
 
 S.ListBgWrap = styled.div`

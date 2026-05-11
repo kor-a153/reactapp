@@ -2,14 +2,18 @@ import React from 'react';
 import myStyle from '../../styles/CommunitySearchStyle'
 import SearchComponent from './SearchComponent';
 import CommunitySearchOrderComponent from './CommunitySearchOrderComponent';
+import useSearchStore from '../useSearchStore';
+import { shallow } from 'zustand/shallow';
 
 const CommunitySearchComponent = () => {
   
-  const select = 0;
-  const search = "";
+  const {setContent, setOrder1, setPage} = useSearchStore();
+  let select = 0;
 
   const handleSubmit = (data) => {
-    console.log("값 : " + data);
+    setContent(data)
+    setOrder1(select)
+    setPage(1)
   }
 
 // '제목', '제목+내용', '내용', '작성자', '댓글'
@@ -17,19 +21,19 @@ const CommunitySearchComponent = () => {
   const handleOnChangeDropDown = (option) => {
     switch(option) {
       case "제목":
-        console.log("0");
+        select = 0;
         break;
       case "제목+내용":
-        console.log("1");
+        select = 1;
         break;
       case "내용":
-        console.log("2");
+        select = 2;
         break;
       case "작성자":
-        console.log("3");
+        select = 3;
         break;
       case "댓글":
-        console.log("4");
+        select = 4;
         break;
     }
 
