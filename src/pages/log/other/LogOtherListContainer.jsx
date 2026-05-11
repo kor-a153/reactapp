@@ -62,7 +62,7 @@ const LOGS = [
         date: '2026.03.03',
         title: '유럽 배낭여행 혼자 도전기',
         vision: '유럽에서 혼자 1년 살기 성공하기',
-        nickname: '유럽탐합가',
+        nickname: '유럽탐험가',
         profileImg: ProfileImg3,
         views: 45,
         likes: 35,
@@ -224,14 +224,15 @@ S.CardGrid = styled.div`
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 50px;
 `;
 
 S.Card = styled.div`
-    width: 100%;
-    min-width: unset;
-    max-width: unset;
-    height: 406px;
+    width: 424px;
+    min-width: 424px;
+    max-width: 424px;
+    height: 500px;
     border-radius: 20px;
     background: ${theme.PALETTE.white};
     box-shadow: -10px 25px 30px 0px rgba(0, 0, 0, 0.07);
@@ -252,7 +253,7 @@ S.Card = styled.div`
 
 S.CardBody = styled.div`
     flex: 1;
-    padding: 24px 24px 20px;
+    padding: 40px 40px 40px;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -262,7 +263,7 @@ S.CardTop = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 30px;   /* 10px → 30px */
 `;
 
 S.Category = styled.span`
@@ -288,7 +289,7 @@ S.Title = styled.p`
     font-size: ${theme.FONT_SIZE.h7};
     font-weight: ${theme.FONT_WEIGHT.bold};
     color: ${theme.PALETTE.black};
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 0;    /* 8px → 20px */
     line-height: 1.4;
     word-break: keep-all;
     overflow-wrap: break-word;
@@ -308,6 +309,7 @@ S.CardBottom = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-top: auto;
+    padding-top: 12px;
 `;
 
 S.Profile = styled.div`
@@ -357,8 +359,8 @@ S.Stat = styled.span`
 `;
 
 S.Thumbnail = styled.img`
-    width: 100%;
-    height: 162px;
+    width: 424px;
+    height: 200px;
     object-fit: cover;
     flex-shrink: 0;
 `;
