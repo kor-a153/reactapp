@@ -7,6 +7,7 @@ import icon04 from '../resources/icon04.png';
 import Content from './components/Content';
 import ImagesContainer from './components/ImagesContainer';
 import AuthorInfo from './components/AuthorInfo';
+import Middle from './components/Middle';
 
 const postData = {
     category: 0,
@@ -23,6 +24,7 @@ const CommunityDetailContainer = () => {
     return (
     <Container>
         <Wrapper>
+            {/* 제목 헤더 */}
             <PostHeader
                 category={postData.category}
                 title={postData.title}
@@ -33,9 +35,15 @@ const CommunityDetailContainer = () => {
                 timeAgo={postData.timeAgo}
             />
             <Divider />
+
+            {/* 내용 */}
             <Content />
+
+            {/* 첨부이미지 목록 */}
             <ImagesContainer />
             <Divider />
+
+            {/* 작성자 정보 */}
             <AuthorInfo
                 profile={postData.profile}
                 author="취준마스터"
@@ -44,6 +52,10 @@ const CommunityDetailContainer = () => {
                 commentCount={136}
             />
             <Divider />
+
+            {/* 중앙(목록으로,좋아요,메뉴버튼컨테이너) */}
+            <Middle />
+
         </Wrapper>
     </Container>
     );
