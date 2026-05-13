@@ -28,7 +28,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
-
   @font-face {
     font-family: 'pretendard';
     src: url(${process.env.PUBLIC_URL}/assets/fonts/pretendard/Pretendard-ExtraLight.woff2) format('woff2');
@@ -36,7 +35,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
-
   @font-face {
     font-family: 'pretendard';
     src: url(${process.env.PUBLIC_URL}/assets/fonts/pretendard/Pretendard-Light.woff2) format('woff2');
@@ -44,7 +42,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
-
   @font-face {
     font-family: 'pretendard';
     src: url(${process.env.PUBLIC_URL}/assets/fonts/pretendard/Pretendard-Regular.woff2) format('woff2');
@@ -52,7 +49,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
-
   @font-face {
     font-family: 'pretendard';
     src: url(${process.env.PUBLIC_URL}/assets/fonts/pretendard/Pretendard-Medium.woff2) format('woff2');
@@ -60,7 +56,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
-
   @font-face {
     font-family: 'pretendard';
     src: url(${process.env.PUBLIC_URL}/assets/fonts/pretendard/Pretendard-SemiBold.woff2) format('woff2');
@@ -68,7 +63,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
-
   @font-face {
     font-family: 'pretendard';
     src: url(${process.env.PUBLIC_URL}/assets/fonts/pretendard/Pretendard-Bold.woff2) format('woff2');
@@ -76,7 +70,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
-
   @font-face {
     font-family: 'pretendard';
     src: url(${process.env.PUBLIC_URL}/assets/fonts/pretendard/Pretendard-ExtraBold.woff2) format('woff2');
@@ -84,7 +77,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
-
   @font-face {
     font-family: 'pretendard';
     src: url(${process.env.PUBLIC_URL}/assets/fonts/pretendard/Pretendard-Black.woff2) format('woff2');

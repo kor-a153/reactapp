@@ -1,0 +1,29 @@
+[33md65fa6f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31mproject/main[m[33m)[m merge
+[33m87b99d5[m merge package.json conflict resolve
+[33mf206358[m[33m ([m[1;31morigin/main[m[33m)[m merge reactapp
+[33mdd18c01[m 0511까지 주말작업분
+[33mb599ffa[m Merge pull request #2 from mys0423/develop
+[33mea900eb[m feat: 스타일 변수 오타 수정, 크기 수정
+[33mbd04d9e[m Merge branch 'develop' of https://github.com/mys0423/reactapp into develop
+[33mdb322f6[m feat: 로그 작성 스텝2 구현
+[33m13b1577[m feat: 로그 작성 스텝1 구현
+[33m4b3be78[m feat: 분석하기 전 과거 로그 가져오기, 분석 스타일 설정, 분석 로딩/완료 팝업창 구현
+[33m240c41c[m feat: 로그 결과 보고서 양식, 작성 내용 구현
+[33m8f0804c[m 0506Reactapp
+[33m92e96b4[m feat: 클립 이미지 제거(경로 추가 후 삽입 예정)
+[33mb3fec59[m 0506reactapp
+[33m7af4199[m feat: 로그 작성 스텝2 상세 구현
+[33mcf14ed7[m feat: 로그 작성 스텝1 상세 구현
+[33mf2b7f07[m feat: 분석하기 버튼에 이어지는 팝업창들 구현
+[33m3a8e1ae[m feat: 로그 결과 페이지 내부 작성 내용 구현(미완)
+[33mf9ccbf5[m feat: 결과 페이지 보고서 양식 구현
+[33m1d28864[m style: 클립 이미지 추가
+[33m5a312c3[m feat: 로그 분석하기 팝업 구현
+[33md11d2e3[m feat: 로그 작성 스텝 2 구현
+[33m3dcf854[m feat: 로그 작성 스텝1 페이지 구현
+[33m94ae4cd[m Merge pull request #1 from dev-tpghks23/main
+[33m44afa99[m init
+[33mfdac3d1[m 0427reactapp
+[33m17daae0[m 0422reactapp
+[33m9a8773e[m 0416Spring
+[33m9e7bff7[m 0415ReactApp
