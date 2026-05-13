@@ -8,7 +8,7 @@ import study from '../../resources/study.jpg'
 import eye from '../../resources/eye.svg'
 import heart from '../../resources/like.svg'
 import post from '../../resources/post.svg'
-import heartFill from '../../resources/like-fill.svg'
+import heartFill from '../../resources/like-fill2.svg'
 import { useNavigate } from 'react-router-dom';
 
 const CommunityBestPost = ({

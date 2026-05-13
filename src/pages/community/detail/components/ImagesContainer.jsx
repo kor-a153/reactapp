@@ -9,11 +9,7 @@ const DUMMY_IMAGES = [
   { src: "https://picsum.photos/seed/img3/144/96", name: "diagram_03.jpg" },
   { src: "https://picsum.photos/seed/img4/144/96", name: "design_04.jpg" },
   { src: "https://picsum.photos/seed/img5/144/96", name: "mockup_05.png" },
-  { src: "https://picsum.photos/seed/img6/144/96", name: "preview_06.png" },
-  { src: "https://picsum.photos/seed/img7/144/96", name: "reference_07.jpg" },
-  { src: "https://picsum.photos/seed/img8/144/96", name: "sample_08.png" },
-  { src: "https://picsum.photos/seed/img9/144/96", name: "capture_09.jpg" },
-  { src: "https://picsum.photos/seed/img10/144/96", name: "image_10.png" },
+
 ];
 
 const ImagesContainer = ({ images = DUMMY_IMAGES }) => {

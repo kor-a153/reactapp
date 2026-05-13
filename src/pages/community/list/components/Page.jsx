@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import S, { colorCSS } from '../../style';
 import { flexCenterRow } from '../../../../styles/common';
 
+// minPage : 최소페이지
+// maxPage : 최대페이지
+// onPageChange(page) : 페이지 가 바뀔때 이벤트 발생 (매개변수 page : 바뀐 페이지)
+// page : 초기 페이지
 const Page = ({ minPage, maxPage, onPageChange, page }) => {
   const [currentPage, setCurrentPage] = useState(page ?? minPage);
 

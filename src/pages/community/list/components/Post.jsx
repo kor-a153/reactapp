@@ -6,7 +6,7 @@ import S, { colorCSS } from '../../style';
 import eye from '../../resources/eye.svg'
 import heart from '../../resources/like.svg'
 import comment from '../../resources/post.svg'
-import likeFill from '../../resources/like-fill.svg'
+import likeFill from '../../resources/like-fill2.svg'
 import getCategoryInfo from '../../GetCategoryInfo';
 
 const Wrapper = styled.div`

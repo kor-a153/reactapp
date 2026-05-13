@@ -174,7 +174,8 @@ S.Span = styled.span`
   ${({size}) => sizeCSS[size]}
   color: ${({color}) => colorCSS[color] ? colorCSS[color] : "#333333"};
   display: ${({display}) => display ? display : "inline"};
-  overflow: ${({isvisible}) => isvisible ? "visible" : "hidden"};
+  /* overflow: ${({isvisible}) => isvisible ? "visible" : "hidden"}; */
+  overflow: visible;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   /* margin-top: ${({marginTop}) => marginTop}; */

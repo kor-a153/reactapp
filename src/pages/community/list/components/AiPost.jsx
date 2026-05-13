@@ -7,7 +7,7 @@ import getCategoryInfo from '../../GetCategoryInfo';
 import eye from '../../resources/eye.svg'
 import heart from '../../resources/like.svg'
 import comment from '../../resources/post.svg'
-import likeFill from '../../resources/like-fill.svg'
+import likeFill from '../../resources/like-fill2.svg'
 
 const AiPost = ({ date, category, title, profile, author, views, likes, comments }) => {
   
