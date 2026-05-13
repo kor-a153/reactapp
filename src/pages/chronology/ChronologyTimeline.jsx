@@ -37,6 +37,10 @@ const ChronologyTimeline = ({
     return groups;
   };
 
+  const groups = groupByYear();
+  const allItems = groups.flatMap(g => g.items);
+  const indexMap = new Map(allItems.map((item, i) => [item.id, i]));
+
   return (
     <Wrapper>
       <Header>
@@ -65,21 +69,22 @@ const ChronologyTimeline = ({
       </VisionCard>
 
       <TimelineSection>
-        {groupByYear().map((group) => (
+        {groups.map((group) => (
           <YearGroup key={group.year}>
             <YearLabel>{group.year}</YearLabel>
             <YearItems>
-              {group.items.map((item, idx) => (
-                <TimelineRow key={item.id} $isLast={idx === group.items.length - 1 && group === groupByYear()[groupByYear().length - 1]}>
+              {group.items.map((item, idx) => {
+                const isReverse = indexMap.get(item.id) % 2 === 1;
+                return (
+                <TimelineRow key={item.id}>
                   <DateCol>
                     {idx === 0 && <YearText>{item.year}</YearText>}
                     <MonthText>{item.month}</MonthText>
                   </DateCol>
                   <DotCol>
                     <Dot />
-                    <Line />
                   </DotCol>
-                  <CardCol>
+                  <CardCol $reverse={isReverse}>
                     <TimelineCard>
                       <CarouselWrapper>
                         <CarouselImg
@@ -105,7 +110,8 @@ const ChronologyTimeline = ({
                     </TimelineCard>
                   </CardCol>
                 </TimelineRow>
-              ))}
+                );
+              })}
             </YearItems>
           </YearGroup>
         ))}
@@ -144,9 +150,7 @@ const ChronologyTimeline = ({
 export default ChronologyTimeline;
 
 const Wrapper = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 24px 80px;
+  padding: 40px 60px 80px;
 `;
 
 const Header = styled.div`
@@ -189,8 +193,8 @@ const VisionCard = styled.div`
   border-radius: 12px;
   padding: 20px 24px;
   margin-bottom: 40px;
-  display: inline-block;
-  min-width: 220px;
+  width: fit-content;
+  margin-left: auto;
 `;
 
 const VisionLabel = styled.p`
@@ -210,6 +214,17 @@ const TimelineSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 92px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #ab47ff, #4caf50);
+  }
 `;
 
 const YearGroup = styled.div``;
@@ -271,8 +286,10 @@ const Line = styled.div`
 `;
 
 const CardCol = styled.div`
-  flex: 1;
+  width: 460px;
+  flex-shrink: 0;
   padding-left: 20px;
+  margin-left: ${({ $reverse }) => $reverse ? '160px' : '0'};
 `;
 
 const TimelineCard = styled.div`

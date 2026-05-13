@@ -7,8 +7,7 @@ const AccountLayout = () => {
     <Wrapper>
       <LeftPanel>
         <Logo>
-          <LogoBox>&gt;_</LogoBox>
-          <LogoText><LogoFail>Fail</LogoFail>Log</LogoText>
+          <img src="/logo.png" alt="FailLog" style={{ height: '48px', width: 'auto' }} />
         </Logo>
         <Tagline>실패는 성공의 어머니</Tagline>
         <Description>
@@ -35,7 +34,33 @@ export default AccountLayout;
 const Wrapper = styled.div`
   display: flex;
   min-height: 100vh;
-  background: linear-gradient(135deg, #e8ecff 0%, #f3e8ff 100%);
+  background: #f0f4ff;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: -120px;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(99, 179, 255, 0.45) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -120px;
+    right: -80px;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(192, 132, 252, 0.4) 0%, transparent 70%);
+    pointer-events: none;
+  }
 `;
 
 const LeftPanel = styled.div`
@@ -53,25 +78,6 @@ const Logo = styled.div`
   margin-bottom: 64px;
 `;
 
-const LogoBox = styled.div`
-  background: linear-gradient(135deg, #7c6ff7 0%, #4359fc 100%);
-  color: #fff;
-  font-weight: 800;
-  font-size: 16px;
-  padding: 6px 10px;
-  border-radius: 6px;
-`;
-
-const LogoText = styled.span`
-  font-size: 22px;
-  font-weight: 800;
-  color: #333;
-`;
-
-const LogoFail = styled.span`
-  font-style: italic;
-  color: #4359fc;
-`;
 
 const Tagline = styled.h1`
   font-size: 42px;

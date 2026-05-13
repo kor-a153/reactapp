@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(Get-ChildItem -Path \"c:\\\\back_0900_kyj\\\\team_project\\\\reactapp\\\\src\" -Recurse -File | Where-Object {$_.Name -match \"\\(?i\\)header\"} | Select-Object -ExpandProperty FullName)",
-      "Bash(findstr /i \"styled\")"
+      "Bash(findstr /i \"styled\")",
+      "PowerShell(New-Item -ItemType File -Path \"c:\\\\back_0900_kyj\\\\team_project\\\\reactapp\\\\src\\\\pages\\\\chronology\\\\ChronologyMain.jsx\" -Force)"
     ]
   }
 }
