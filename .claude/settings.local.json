@@ -6,7 +6,8 @@
       "PowerShell(New-Item -ItemType File -Path \"c:\\\\back_0900_kyj\\\\team_project\\\\reactapp\\\\src\\\\pages\\\\chronology\\\\ChronologyMain.jsx\" -Force)",
       "Bash(find \"C:/Users/yuo02/OneDrive/문서/카카오톡 받은 파일/oauth_react/oauth_react/src/pages\" -type f 2>/dev/null)",
       "Read(//c/Users/yuo02/OneDrive/문서/카카오톡 받은 파일/oauth_react/oauth_react/src/pages/**)",
-      "PowerShell(New-Item -ItemType File -Path \"c:\\\\back_0900_kyj\\\\team_project\\\\reactapp\\\\src\\\\pages\\\\account\\\\login\\\\LoginComponent.jsx\" -Force)"
+      "PowerShell(New-Item -ItemType File -Path \"c:\\\\back_0900_kyj\\\\team_project\\\\reactapp\\\\src\\\\pages\\\\account\\\\login\\\\LoginComponent.jsx\" -Force)",
+      "Bash(npx react-scripts *)"
     ]
   }
 }

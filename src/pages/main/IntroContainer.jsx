@@ -429,7 +429,7 @@ const CATEGORY_STYLES = {
 S.Wrap = styled.div`
     width: 100%;
     min-height: 100vh;
-    background-color: ${theme.PALETTE.white};
+    background: linear-gradient(160deg, #eaf3ff 0%, #ffffff 40%, #f5eeff 100%);
 `;
 
 S.ColorGradient = styled.span`
